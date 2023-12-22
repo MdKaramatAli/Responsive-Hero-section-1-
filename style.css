@@ -1,0 +1,71 @@
+.card-cointainer
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.card-head
+{
+    font-size: 1.8rem;
+    padding : 1rem 0;
+    font-weight: 700;
+}
+.card-head-text
+{
+    font-size: .9rem;
+    text-align: center;
+    color: rgb(110, 110, 110);
+    padding: 1rem;
+
+}
+.card-pieces
+{
+    background-color: rgba(245, 245, 245, 0.629);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+.card
+{
+    margin: 1rem;
+    background-color:rgba(14, 95, 225, 0.836);
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.225);
+}
+.card-ion .fa-solid
+{
+    font-size: 1.5rem;
+    background-color: rgb(239, 227, 227);
+    padding: .5rem;
+    margin: .8rem 0;
+    border-radius: 50%;
+}
+.card-heading
+{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    color: white;
+}
+.card-text
+{
+    font-size: .9rem;
+    color: white;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+        /* // for small screen */
+@media screen and (max-width: 767px)
+{
+    .card-pieces
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }  
+}
